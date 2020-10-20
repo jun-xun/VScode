@@ -43,3 +43,11 @@ h = {"Content-Type":"application/json","token":nt}            # 请求头
 d ={"username":"liuyun1", "password":"a12345678"}  # 请求参数
 r = requests.get(url=u,headers=h)          # r 是返回值
 print(r.text)
+
+# # 用户退出
+# nt = read_file("./user_token.txt")
+# u = "http://118.24.105.78:2333/logout"              # 接口地址
+# h = {"Content-Type":"application/json","token":nt}            # 请求头
+# d ={"username":"liuyun1", "password":"a12345678"}  # 请求参数
+# r = requests.get(url=u,headers=h)          # r 是返回值
+# print(r.text)
