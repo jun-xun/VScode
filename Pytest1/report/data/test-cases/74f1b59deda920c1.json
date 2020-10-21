@@ -1,0 +1,53 @@
+{
+  "uid" : "74f1b59deda920c1",
+  "name" : "test_02_login_file_byerroneous_username",
+  "fullName" : "case.test_01_login#test_02_login_file_byerroneous_username",
+  "historyId" : "b2a3ff9a643b8dc348a8b8e53ef57350",
+  "time" : {
+    "start" : 1603269255871,
+    "stop" : 1603269256133,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NAM9OU2"
+  }, {
+    "name" : "thread",
+    "value" : "5372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.test_01_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74f1b59deda920c1.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 21 16:34:15 CST 2020","Wed Oct 21 16:34:15 CST 2020","251","case","test_01_login","","","","test_01_login_success",""
+"passed","Wed Oct 21 16:34:15 CST 2020","Wed Oct 21 16:34:16 CST 2020","262","case","test_01_login","","","","test_02_login_file_byerroneous_username",""
+"passed","Wed Oct 21 16:34:16 CST 2020","Wed Oct 21 16:34:16 CST 2020","394","case","test_02_article","","","","test_01_new_article",""

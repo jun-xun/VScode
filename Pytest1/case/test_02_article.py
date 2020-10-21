@@ -7,20 +7,23 @@ sys.path.append(os.getcwd())
 
 from utils.dbtools import query
 from utils.filetools import write_file,read_file
-from conf.commontools import HOST
-from conf.commontools import get_url
+from utils.commontools import HOST
+from utils.commontools import get_url
+from utils.exceltools import read_excel
+
+data = read_excel(excel_path="data\测谈网接口测试用例.xlsx", sheet_name='文章模块')
 
 # 测试用例
 def test_01_new_article():
     # u = "http://118.24.105.78:2333/article/new"
-    u = HOST + "/article/new"
-    u = get_url("/article/new")
-    h = {"Content-Type":"application/json","token":read_file("./conf/user_token.txt")}
-    d = {"title":"不学习没饭吃", "content":"楞个慢", "tags":"海上生明月", "brief":"介绍", "ximg":"dsfsdf.jpg" }
+    # u = HOST + "/article/new"
+    u = eval(data[0][2])  # 因为返回的 data 数据是字符串类型，这里的 eval 把字符串转换成对应的类型
+    h = eval(data[0][3])  # eval 把字典类型的字符串转换成 字典
+    d = eval(data[0][4])
     r = requests.post(url=u,headers=h,json=d)
 
-    assert r.status_code ==200
-    assert r.json()["status"] ==200   
+    assert r.status_code ==int(data[0][5])
+    assert r.json()["status"] ==int(data[0][6])
     # print(r.text)
 
     iid = r.json()["data"]["articleid"]
