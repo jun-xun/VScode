@@ -16,7 +16,7 @@ desired_caps['unicodeKeyboard'] = True                      # 为了支持中文
 desired_caps['resetKeyboard'] = True                        # 设置成appium自带的键盘
 desired_caps['noReset'] = True                        # 使用app的缓存
 # 去打开app，并且返回当前app的操作对象
-driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)  
 
 # 元素定位
 # accessibility id
